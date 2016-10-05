@@ -7,22 +7,24 @@ class TestHorse < Minitest::Test
 
   def setup
 
-    horses = {
-      horse1: {
-        name: "Lightning",
-        age: 4,
-        speed: 7 
-        },
-        horse2: { 
-          name: "Toasted Peanut",
-          age: 7,
-          speed: 5
-        }
+    # horses = {
+    #   horse1: {
+    #     name: "Lightning",
+    #     age: 4,
+    #     speed: 7 
+    #     },
+    #     horse2: { 
+    #       name: "Toasted Peanut",
+    #       age: 7,
+    #       speed: 5
+    #     }
+# 
+      # }
 
-      }
+      @horse1 = Horse.new(name:"Lightning", age:4, speed:7)
+      @horse2 = Horse.new(name:"Toasted Peanut", age:7, speed:5)
+      @horse3 = Horse.new(name:"Craig's Horse", age:20, speed:2)
 
-      @horse1 = Horse.new("Lightning", 4, 7)
-      @horse2 = Horse.new("Toasted Peanut", 7, 5)
 
     # @horse1 = Horse.new(name: "Lightning",age:  )
 
