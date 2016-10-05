@@ -40,9 +40,10 @@ class TestRace < Minitest::Test
     assert_equal("Lightning and Toasted Peanut are racing at Musselburgh", @race1.race_running)
   end
 
-  # def test_race_results
-  #   assert_equal(["Lightning", "Toasted Peanut", "Craig's Horse"], @race2.race_results)
-  # end
+  def test_race_results
+    assert_equal(["Lightning", "Toasted Peanut", "Craig's Horse"], @race2.race_results)
+    assert_equal(["Lightning", "Toasted Peanut"], @race1.race_results)
+  end
 
   
 

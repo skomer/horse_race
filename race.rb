@@ -8,11 +8,6 @@ class Race
     @horses = horses
   end
 
-  # def race_has_horses
-  #   for horse in @horses
-  #     puts horse
-  #   end
-  # end
 
 # This is a candidate for refactoring
   def race_running
@@ -29,13 +24,14 @@ class Race
     return string[2..-1]
   end
 
-#   def race_results
-#     results = []
+  def race_results
+    results = []
+    horses_sorted_by_final_speed = @horses.sort_by { |horse| horse.final_speed }
+    for horse in horses_sorted_by_final_speed
+      results.push(horse.name)
+    end
+    return results.reverse
 
-# for horse in horses
-#   results.push(horse[:name])
-
-
-#   end
+  end
 
 end
