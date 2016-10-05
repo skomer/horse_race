@@ -31,7 +31,24 @@ class Race
       results.push(horse.name)
     end
     return results.reverse
-
   end
 
+  def print_pretty_results
+    this_race_results = race_results
+    for horse in this_race_results
+      puts "The horse finishing in place #{(this_race_results.index(horse)) + 1} is #{horse}"
+    end
+  end
+
+
 end
+
+
+
+
+
+
+
+
+
+

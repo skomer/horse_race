@@ -26,8 +26,6 @@ class TestRace < Minitest::Test
 
     @race1 = Race.new("Musselburgh", 5, @two_horses)
     @race2 = Race.new("Hamilton", 9, @three_horses)
-
-
   end
 
   def test_race_has_name_and_length
@@ -44,10 +42,5 @@ class TestRace < Minitest::Test
     assert_equal(["Lightning", "Toasted Peanut", "Craig's Horse"], @race2.race_results)
     assert_equal(["Lightning", "Toasted Peanut"], @race1.race_results)
   end
-
-  
-
-
-
 
 end
