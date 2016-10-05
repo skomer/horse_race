@@ -6,6 +6,7 @@ class Race
     @name = name
     @length = length
     @horses = horses
+    @useless = 0
   end
 
 
