@@ -29,4 +29,13 @@ class Race
     return string[2..-1]
   end
 
+#   def race_results
+#     results = []
+
+# for horse in horses
+#   results.push(horse[:name])
+
+
+#   end
+
 end
